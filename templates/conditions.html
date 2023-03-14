@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center><h1>IF statment</h1>
+    <h1>
+        {% if a > b %}
+            <h1>inside if block</h1>
+        {% endif %}
+  
+    </h1></center>
+
+    <center><h1>ELSE statment</h1>
+        <h1>
+            {% if a > b %}
+                <h1>inside if block</h1>
+            {% else %}
+                <h1>inside else block</h1>
+            {% endif %}
+      
+        </h1></center>
+    
+        <center><h1>ELIF statment</h1>
+            <h1>
+                {% if a > b and a > c %}
+                    <h1>inside if block</h1>
+                    <h1>A is Higesht</h1>
+                {% elif b > c %}
+                    <h1>inside elif block</h1>
+                    <h1>B is Higesht</h1>
+                {% else %}
+                    <h1>inside else block</h1>
+                    <h1>c is Higesht</h1>
+                {% endif %}</h1></center>
+
+        <center><h1>Nested IF statment</h1>
+            <h1>
+                {% if a > b %}
+                    {% if a > c %}
+                        <h1>inside inner if block</h1>
+                        <h1>A is Higesht</h1>
+                    {% else %}
+                        <h1>inside inner else block</h1>
+                        <h1>c is Higesht</h1>
+                    {% endif %}
+                {% else %}
+                    {% if b > c %}
+                        <h1>inside if of else block</h1>
+                        <h1>B is Higesht</h1>
+                    {% else %}
+                        <h1>inside else block</h1>
+                        <h1>c is Higesht</h1>
+                    {% endif %}
+                {% endif %}
+            </h1>
+        </center>
+        <center><h1>For Loop</h1></center>
+        {% for i in a %}
+            <center>
+                <h1>Inside for loop</h1>
+                <h1>{{i}}</h1>
+            </center>
+        {% endfor %}
+    
+
+</body>
+</html>
